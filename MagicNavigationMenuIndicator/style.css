@@ -20,28 +20,27 @@ body {
   background: var(--clr);
 }
 .navigation {
-  width: 400px;
+  width: 450px;
   height: 70px;
   background: #fff;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-radius: 10px;
+  border-radius: 35px;
 }
 .navigation ul {
   display: flex;
   width: 350px;
 }
 .navigation ul li {
-  position: relative;
+  position: static;
   list-style: none;
   width: 70px;
   height: 70px;
   z-index: 1;
 }
 .navigation ul li a {
-  position: relative;
+  position: static;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,16 +109,21 @@ body {
 }
 .navigation ul li:nth-child(1).active ~ .indicator {
   transform: translateX(calc(70px * 0));
+  background: rgb(110, 226, 94);
 }
 .navigation ul li:nth-child(2).active ~ .indicator {
   transform: translateX(calc(70px * 1));
+  background: rgb(173, 173, 255);
 }
 .navigation ul li:nth-child(3).active ~ .indicator {
   transform: translateX(calc(70px * 2));
+  background: khaki;
 }
 .navigation ul li:nth-child(4).active ~ .indicator {
   transform: translateX(calc(70px * 3));
+  background: rgb(241, 112, 73);
 }
 .navigation ul li:nth-child(5).active ~ .indicator {
   transform: translateX(calc(70px * 4));
+  background: gray;
 }
