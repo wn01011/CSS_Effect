@@ -1,0 +1,89 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokemonProject</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./Assets/Data/collider.js"></script>
+    <script src="./Assets/Data/battleZone.js"></script>
+    <script src="./Assets/Data/pokemonData.js"></script>
+  </head>
+  <body>
+    <div style="display: inline-block">
+      <div
+        id="film"
+        style="
+          background-color: black;
+          position: absolute;
+          width: 960px;
+          height: 640px;
+          opacity: 0;
+          pointer-events: none;
+        "
+      ></div>
+      <canvas id="canvas"> </canvas>
+    </div>
+    <div id="battleScene">
+      <section id="battleView">
+        <div id="opponent">
+          <div class="status">
+            <div class="statusContainer">
+              <div class="name">고우스트♀♂:L21</div>
+              <div class="hpContainer">
+                <div class="hp">
+                  <div class="hpBar"></div>
+                </div>
+                <div class="exp"></div>
+              </div>
+            </div>
+          </div>
+          <div class="image" id="opponentImage">
+            <canvas id="opponentCanvas"></canvas>
+          </div>
+        </div>
+        <div id="ally">
+          <div class="image" id="allyImage">
+            <canvas id="allyCanvas"></canvas>
+          </div>
+          <div class="status">
+            <div class="statusContainer">
+              <div class="name">메타몽100</div>
+              <div class="hpContainer">
+                <div class="hp">
+                  <div class="hpBar"></div>
+                </div>
+                <div class="hptext">293/293</div>
+                <div class="exp">
+                  <div class="expBar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span
+          ><img
+            id="battleBackground"
+            src="./Assets/Images/battleBackground.png"
+            alt=""
+        /></span>
+      </section>
+      <section id="select">
+        <div id="talk"></div>
+        <ul id="attackList">
+          <li class="skills" tabindex="-1"><span></span></li>
+          <li class="skills" tabindex="-1"><span></span></li>
+          <li class="skills" tabindex="-1"><span></span></li>
+          <li class="skills" tabindex="-1"><span></span></li>
+        </ul>
+        <div id="battleSelect">
+          <button id="attack"><span></span>싸우다</button>
+          <button id="pokemon"><span></span>가방</button>
+          <button id="bag"><span></span>포켓몬</button>
+          <button id="run"><span></span>도망치다</button>
+        </div>
+      </section>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
