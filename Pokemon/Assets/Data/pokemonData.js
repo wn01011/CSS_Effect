@@ -6,9 +6,9 @@ function PokemonDataFromId(x, y) {
     if (item.id.x == x && item.id.y == y) {
       curItem = item;
       // 왜 break안됨 ?
+      return curItem;
     }
   });
-  return curItem;
 }
 
 class Pokemon {

@@ -3,6 +3,17 @@
   margin: 0;
   box-sizing: border-box;
 }
+header {
+  position: absolute;
+  font-size: 2rem;
+  left: 47vw;
+  text-align: center;
+}
+footer {
+  position: absolute;
+  font-size: 2rem;
+  text-align: center;
+}
 #crossHair {
   pointer-events: none;
   content: "";
