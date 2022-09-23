@@ -8,6 +8,12 @@ let pointerLock = document.addEventListener("click", OnClick);
 function OnClick() {
   crossHair.requestPointerLock();
 }
+const link = "http://block7.chocodarling.com/";
+
+function goHomeFunction() {
+  location.href = link;
+  location.replace(link);
+}
 
 const SPEED = 20;
 const worldPos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
@@ -136,9 +142,15 @@ window.onkeydown = (e) => {
     timeText = 20;
     timeId = setInterval(() => {
       timeText -= 1;
-      timeLimit.innerText = `남은 시간 : ${timeText}`;
+      timeLimit.innerHTML = `남은 시간 : ${timeText}<button
+      class="goHome" onclick="goHomeFunction()"
+      style="display: block; width: 200px; height: 50px; font-size: 1.5rem"
+    >
+      홈으로
+    </button>`;
     }, 1000);
-    score.innerText = `점수 : ${scoreText}`;
+
+    score.innerHTML = `점수 : ${scoreText}`;
   }
 };
 

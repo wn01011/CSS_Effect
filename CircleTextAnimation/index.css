@@ -1,0 +1,32 @@
+.circleContainer {
+  position: absolute;
+  left: 0vw;
+  top: 0vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+.textSplitting {
+  transform-style: preserve-3d;
+  animation: animate 8s linear infinite;
+}
+.textSplitting .char {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  color: #35146f;
+  font-size: 4em;
+  padding: 5px 17px;
+  transform-style: preserve-3d;
+  transform-origin: center;
+}
+@keyframes animate {
+  from {
+    transform: perspective(500px) rotateY(360deg) rotateZ(15deg);
+  }
+  to {
+    transform: perspective(500px) rotateY(0deg) rotateZ(15deg);
+  }
+}
