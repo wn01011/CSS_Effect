@@ -28,24 +28,15 @@ function drawTree(startX, startY, len, angle, branchWidth, color1, color2) {
   let ranNum = 0;
   if (Math.random() < 0.9) {
     ranNum = Math.random() * 15 + 5;
-    setTimeout(
-      () => drawTree(0, -len, len * 0.85, angle + ranNum, branchWidth),
-      500
-    );
+    drawTree(0, -len, len * 0.85, angle + ranNum, branchWidth);
   }
   if (Math.random() < 0.9) {
     ranNum = Math.random() * 15 + 5;
-    setTimeout(
-      () => drawTree(tempStartX, -len, len * 0.85, angle - ranNum, branchWidth),
-      500
-    );
+    drawTree(0, -len, len * 0.85, angle - ranNum, branchWidth);
   }
   if (Math.random() < 0.2) {
     ranNum = Math.random() * 15 - 7.5;
-    setTimeout(
-      () => drawTree(tempStartX, -len, len * 0.5, angle + ranNum, branchWidth),
-      500
-    );
+    drawTree(0, -len, len * 0.5, angle + ranNum, branchWidth);
   }
   ctx.restore();
 }
