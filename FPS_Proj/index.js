@@ -5,14 +5,9 @@ const timeLimit = document.getElementById("timeLimit");
 let scoreText = 0;
 let timeText = 20;
 let pointerLock = document.addEventListener("click", OnClick);
+
 function OnClick() {
   crossHair.requestPointerLock();
-}
-const link = "http://block7.chocodarling.com/";
-
-function goHomeFunction() {
-  location.href = link;
-  location.replace(link);
 }
 
 const SPEED = 20;
