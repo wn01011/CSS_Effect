@@ -9,4 +9,10 @@
 - HTML / CSS
 - Javascript
 
-### 소감 웹상에서 다소 복잡한 선들을 긋는 것도 가능하다는 것과 잘만 활용하다면 디자인적으로도 괜찮겠다 느낀 프로젝트였습니다.
+### 소감
+
+- 웹상에서 다소 복잡한 선들을 긋는 것도 가능하다는 것과 잘만 활용하다면 디자인적으로도 괜찮겠다 느낀 프로젝트였습니다.
+
+<img src="./img/GenTree.gif" width="30%" alt="genTreeImg"></img>
+<img src="./img/GenTree1.png" width="30%" alt="genTreeImg"></img>
+<img src="./img/GenTree2.png" width="30%" alt="genTreeImg"></img><br />
